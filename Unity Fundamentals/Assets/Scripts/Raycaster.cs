@@ -7,7 +7,7 @@ public class Raycaster : MonoBehaviour
     public Camera camera;
     public GameObject obj;
     public Transform origin;
-    public float rayLenght = 2.0f;
+    public float rayLength = 2.0f;
     private Ray ray;
     private RaycastHit hit;
 
@@ -59,7 +59,7 @@ public class Raycaster : MonoBehaviour
 
             RaycastHit[] hits = null;
 
-            hits = Physics.RaycastAll(origin.position, Vector3.forward, rayLenght);
+            hits = Physics.RaycastAll(origin.position, Vector3.forward, rayLength);
 
             if (hits.Length > 0)
             {
